@@ -53,16 +53,51 @@ public class Converting {
 //        } while (true);
 //        System.out.println("Program sonlandırılıyor.");
 
+//
+//        System.out.println("celcius: ");
+//        for (String celciusString = scanner.nextLine(); !celciusString.equals("q"); celciusString = scanner.nextLine()) {
+//            double celcius = Double.parseDouble(celciusString);
+//            double fahrenheit = (9.0 / 5) * celcius + 32;
+//            System.out.println(celcius + " celcius = " + fahrenheit + " fahrenheit");
+//            System.out.println("celcius: ");
+//        }
+//        System.out.println("Program sonlandırılıyor.");
 
-        System.out.println("celcius: ");
-        for (String celciusString = scanner.nextLine(); !celciusString.equals("q"); celciusString = scanner.nextLine()) {
-            double celcius = Double.parseDouble(celciusString);
-            double fahrenheit = (9.0 / 5) * celcius + 32;
-            System.out.println(celcius + " celcius = " + fahrenheit + " fahrenheit");
-            System.out.println("celcius: ");
+
+//        System.out.println("pound: ");
+//        String poundString = scanner.nextLine();
+//        while (!poundString.equals("quit")) {
+//            double pound = Double.parseDouble(poundString);
+//            double kilograms = pound * 0.454;
+//            System.out.println(pound+" pound "+ kilograms+ " kilograms");
+//            System.out.println("pound: ");
+//            poundString =scanner.nextLine();
+//        }
+//        System.out.println("Program sonlandırılıyor.");
+
+
+//        System.out.println("pound: ");
+//        for (String poundString = scanner.nextLine(); !poundString.equals("quit"); poundString = scanner.nextLine()) {
+//            double pound = Double.parseDouble(poundString);
+//            double kilograms = pound * 0.454;
+//            System.out.println(pound + " pound " + kilograms + " kilograms");
+//            System.out.println("pound: ");
+//        }
+//        System.out.println("Program sonlandırılıyor.");
+
+        String poundString;
+        do {
+            System.out.println("Pound: ");
+            poundString = scanner.nextLine();
+            if (poundString.equals("q")) {
+               break;
+            } else {
+                double pound = Double.parseDouble(poundString);
+                double kilograms = pound * 0.454;
+                System.out.println(pound + " pound " + kilograms + " kilograms");
+            }
         }
+        while (true);
         System.out.println("Program sonlandırılıyor.");
-
-
     }
 }
