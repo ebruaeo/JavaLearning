@@ -14,8 +14,9 @@ For example, let's add a name String parameter to our welcome() function:
 
     //TODO when calling the method, we need to pass it a value for the name parameter inside the parentheses:
     static void welcome(String name) {
-        System.out.println("Welcome, "+name);
+        System.out.println("Welcome, " + name);
     }
+
     public static void main(String[] args) {
         welcome("James");
         welcome("Amy");

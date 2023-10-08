@@ -12,7 +12,7 @@ Then, write a main method to test the "addition" method by passing different pai
      */
 //
     static int addition(int a, int b) {
-        int sum = a+b;
+        int sum = a + b;
         return sum;
 //        return a+b;
     }
@@ -24,7 +24,7 @@ Then, write a main method to test the "addition" method by passing different pai
 
 //    TODO Exercise 2: String Manipulation
 
-//    Create a method called "reverseString" that takes a String as input and returns the reverse of that String.
+    //    Create a method called "reverseString" that takes a String as input and returns the reverse of that String.
     //    Write a main method to test the "reverseString" method by passing various strings.
     static String reverseString(String str) {
         String reversed = "";
@@ -61,7 +61,7 @@ Then, write a main method to test the "addition" method by passing different pai
 
     static int findMin(int[] arr) {
         int min = arr[0];
-        for(int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] < min) {
                 min = arr[i];
             }
@@ -121,11 +121,6 @@ Then, write a main method to test the "addition" method by passing different pai
     }
 
 
-
-
-
-
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -151,7 +146,7 @@ Then, write a main method to test the "addition" method by passing different pai
         return numbers;
     }
 
-    static boolean baybay(int[] nums, int e){
+    static boolean baybay(int[] nums, int e) {
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == e) {
                 return true;
@@ -165,24 +160,6 @@ Then, write a main method to test the "addition" method by passing different pai
 
     // TODO Rastgele 100 elemanlı bir array oluştur. Bu arrayi ekrana bastır. Kullanıcıdan int bir sayı al ve bu
     //  sayının bu array içinde olup olmadığını ekrana bastır
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

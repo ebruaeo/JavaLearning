@@ -5,7 +5,7 @@ import java.security.DigestException;
 public class homeworkOne {
     public static void main(String[] args) {
 
-        // fahrenheit celciusa çevirme
+        // celcius to fahrenheit çevirme
         double celsius = 40.4;
         double fahrenheit = (9.0 / 5) * celsius + 32;
         System.out.println(celsius + " celsius " + fahrenheit);
