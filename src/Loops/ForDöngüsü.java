@@ -1,18 +1,40 @@
-package topics;
+package Loops;
+
+import java.util.Scanner;
 
 public class ForDöngüsü {
     public static void main(String[] args) {
         // FOR DÖNGÜSÜ GİRİŞ
 
-        // for (int i = başlangıç; koşul; arttırma; {    }
+        // for (int i = başlangıç; koşul; arttırma veya azaltma; {    }
+        //döngü koşulumuz doğru olduğu sürece çalışacak
 
-        // 1'den 10'a kadar sayıları ekrana yazdıralım.
-//        System.out.println("1");
-//        System.out.println("2");
-//        System.out.println("3");
-//        .
-//        .
-//        .
+        /*! int i= 0;
+        ! for (; i<6; i++) {
+        !..... } */
+        /*? int i=0;
+          ? int J=10;
+        ? For (; i<10 && j>0; i++,j-- ) {} */
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Bir sayı giriniz: ");
+        int sayı = scanner.nextInt();
+        int fakt=1;
+        for (int i =1; i<=sayı; i++) {
+            fakt*=i;
+        }
+        System.out.println(fakt);
+
+
+
+
+
+
+
+
+
+
+
+
 
         for (int i = 1; i <= 100; i++) {
             System.out.println(i);
