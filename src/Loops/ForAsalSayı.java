@@ -1,4 +1,4 @@
-package DöngülerExercises;
+package Loops;
 
 import java.util.Scanner;
 
