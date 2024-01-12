@@ -1,5 +1,8 @@
 package Methods;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MethodParameters {
 
     /*
@@ -20,6 +23,26 @@ For example, let's add a name String parameter to our welcome() function:
     public static void main(String[] args) {
         welcome("James");
         welcome("Amy");
+        isEvenOrOdd(5);
+        isEvenOrOdd(4);
+        ArrayList<String> ceAlınanDersler = new ArrayList<>(Arrays.asList("Mat-1", "Digital Design", "Computer Programming-1"));
+        ArrayList<String> meAlınanDersler = new ArrayList<>(Arrays.asList("Mat-1", "Fizik-1", "Diferansiyel Denklemler"));
+
+        printAvailableLectures(ceAlınanDersler);
+        printAvailableLectures(meAlınanDersler);
     }
     //This way, we can call our method with different parameters and generate different results based on them.
+
+    static void isEvenOrOdd(int x) {
+        if (x % 2 == 0) {
+            System.out.println(x + " is even.");
+        } else {
+            System.out.println(x + " is odd.");
+        }
+    }
+
+    static void printAvailableLectures(ArrayList<String> lectures) {
+        System.out.println("Alabileceğiniz dersler: " + lectures);
+        System.out.println("Birden fazla ders seçilirse seçilen dersler virgül ile ayrılmak zorundadır.");
+    }
 }
