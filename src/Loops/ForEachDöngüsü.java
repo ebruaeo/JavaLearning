@@ -1,4 +1,4 @@
-package topics;
+package Loops;
 
 public class ForEachDöngüsü {
     public static void main(String[] args) {
