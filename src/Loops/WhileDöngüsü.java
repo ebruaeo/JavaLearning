@@ -1,18 +1,37 @@
-package topics;
+package Loops;
 
 import java.util.Scanner;
 
 public class WhileDöngüsü {
     public static void main(String[] args) {
 
-        // for (int i = başlangıç; koşul; arttırma; {    }
-
-        int i = 1;
-
+      /*   int i = 1;
         while (i <= 10) {
             System.out.println(i);
             i++;
+        } */
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Bir sayı giriniz: ");
+        int sayi= scanner.nextInt();
+        int fact =1;
+        while (sayi>0) {
+            fact *=sayi;
+            sayi--;
         }
+        System.out.println(fact);
+
+
+
+
+
+
+
+
+
+
+
+
+
         // 1'den 10'a kadar olan çift olan sayıları ekrana yazdır
         int i2 = 1;
         while (i2 <= 10) {
@@ -51,12 +70,12 @@ public class WhileDöngüsü {
 
         System.out.println("Guess the password: ");
         String password = "let me in";
-        Scanner scanner = new Scanner(System.in);
-        String guess = scanner.nextLine();
+        Scanner scanr = new Scanner(System.in);
+        String guess = scanr.nextLine();
 
         while (!guess.equals(password)) {
             System.out.println("Guess the password: ");
-            guess = scanner.nextLine();
+            guess = scanr.nextLine();
         }
         System.out.println("correct");
 
