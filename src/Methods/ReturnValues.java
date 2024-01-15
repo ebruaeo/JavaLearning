@@ -40,9 +40,11 @@ public class ReturnValues {
 
     public static void main(String[] args) {
         int x = 89;
-        if (check(x) == true) {
+        if (check(x)) {
             System.out.println("Congrats!");
         }
+       String name = "ebru".toUpperCase();
+        Math.pow(3, 4);
     }
 
 
